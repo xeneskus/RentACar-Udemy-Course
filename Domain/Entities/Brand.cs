@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Brand:Entity<string>
+    public class Brand:Entity<Guid>
     {
         public string Name { get; set; }
 
@@ -16,10 +16,10 @@ namespace Domain.Entities
         {
 
         }
-        public Brand(string id,string name)
+        public Brand(Guid id, string name) : this()
         {
-            Id= id;
-            Name= name;
+            Id = id;
+            Name = name;
         }
     }
 }
