@@ -9,7 +9,8 @@
   <ItemGroup>
     <Folder Include="Features\Brands\Constants\" />
     <Folder Include="Features\Brands\Rules\" />
-    <Folder Include="Features\Models\" />
+    <Folder Include="Features\Models\Constants\" />
+    <Folder Include="Features\Models\Rules\" />
   </ItemGroup>
 
   <ItemGroup>
