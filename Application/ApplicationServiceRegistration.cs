@@ -1,4 +1,5 @@
-﻿using Core.Application.Pipelines.Transaction;
+﻿using Core.Application.Pipelines.Caching;
+using Core.Application.Pipelines.Transaction;
 using Core.Application.Pipelines.Validation;
 using Core.Application.Rules;
 using FluentValidation;
@@ -24,6 +25,7 @@ public static class ApplicationServiceRegistration
             configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());//git bütün assembly tara orada command handler bul onları birbirileriyle eşleştir listlee koy yarın bir gün send yaparsak onu çalıştır
             configuration.AddOpenBehavior(typeof(RequestValidationBehavior<,>));
             configuration.AddOpenBehavior(typeof(TransactionScopeBehavior<,>));
+            configuration.AddOpenBehavior(typeof(CachingBehavior<,>));
         });
         return services;
     }
