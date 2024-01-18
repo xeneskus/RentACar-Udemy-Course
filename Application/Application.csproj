@@ -17,6 +17,7 @@
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
     <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
